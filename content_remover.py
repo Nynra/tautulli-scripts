@@ -28,7 +28,6 @@ class ContentRemover(object):
         self._config = configparser.ConfigParser()
         self._config.read(self._config_path)
 
-        self._verbose = self._config.getboolean("DEFAULT", "verbose")
         self._dry_run = self._config.getboolean("DEFAULT", "dry_run")
 
         # Get the server
